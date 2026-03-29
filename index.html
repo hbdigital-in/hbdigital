@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HB Digital — Websites & Digital Setup for Small Businesses</title>
+<meta name="description" content="Professional websites, business email & Google Business setup for small businesses. Ready in 5–10 days. By HB Digital.">
+<meta property="og:title" content="HB Digital — Digital Services for Small Businesses">
+<meta property="og:description" content="Websites, business email & Google Business setup for small businesses. Starting ₹5,999. Ready in 5–10 days.">
+<meta property="og:url" content="https://www.hbdigital.in">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://www.hbdigital.in">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "HB Digital",
+  "description": "Professional websites, business email & Google Business setup for small businesses",
+  "url": "https://www.hbdigital.in",
+  "priceRange": "₹₹"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a1a2e;
+  --ink2: #3d3d5c;
+  --muted: #7a7a9a;
+  --gold: #c9a84c;
+  --gold-lt: #f9f3e3;
+  --gold-border: #e8dfc5;
+  --cream: #faf9f6;
+  --white: #ffffff;
+  --border: #e4e0d8;
+  --green: #1f6b47;
+  --green-lt: #e8f5ee;
+  --wa: #25d366;
+  --radius: 12px;
+  --shadow: 0 2px 16px rgba(26,26,46,0.08);
+  --shadow-lg: 0 8px 40px rgba(26,26,46,0.14);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; line-height: 1.2; }
+h1 { font-size: clamp(34px, 6.5vw, 58px); font-weight: 600; }
+h2 { font-size: clamp(26px, 4.5vw, 40px); font-weight: 600; }
+h3 { font-size: clamp(18px, 2.5vw, 24px); font-weight: 600; }
+em { font-style: italic; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+section { padding: 80px 0; }
+
+/* BUTTONS */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 26px; border-radius: 8px;
+  font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 600;
+  text-decoration: none; border: none; cursor: pointer;
+  transition: all 0.2s; letter-spacing: 0.01em; line-height: 1;
+}
+.btn-wa { background: var(--wa); color: white; }
+.btn-wa:hover { background: #20b857; transform: translateY(-1px); box-shadow: 0 4px 20px rgba(37,211,102,0.35); }
+.btn-primary { background: var(--ink); color: white; }
+.btn-primary:hover { background: var(--ink2); transform: translateY(-1px); }
+.btn-outline { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
+.btn-outline:hover { background: var(--ink); color: white; }
+.btn-outline-white { background: transparent; color: white; border: 1.5px solid rgba(255,255,255,0.35); }
+.btn-outline-white:hover { background: rgba(255,255,255,0.08); }
+.btn-gold { background: var(--gold); color: white; }
+.btn-gold:hover { background: #b8943d; transform: translateY(-1px); }
+
+/* NAV */
+#navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(250,249,246,0.96); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: box-shadow 0.3s;
+}
+#navbar.scrolled { box-shadow: var(--shadow); }
+.nav-inner {
+  max-width: 1100px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 600;
+  text-decoration: none; color: var(--ink);
+}
+.nav-logo em { color: var(--gold); }
+.nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+.nav-links a {
+  text-decoration: none; color: var(--ink2); font-size: 14px; font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-cta {
+  background: var(--wa) !important; color: white !important;
+  padding: 8px 18px; border-radius: 6px; font-weight: 600 !important;
+}
+.nav-cta:hover { background: #20b857 !important; color: white !important; }
+.nav-toggle {
+  display: none; background: none; border: none; cursor: pointer;
+  flex-direction: column; gap: 5px; padding: 4px;
+}
+.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: all 0.3s; }
+
+/* HERO */
+#hero {
+  min-height: 100vh; display: flex; align-items: center;
+  padding: 100px 0 60px;
+  background: var(--ink);
+  position: relative; overflow: hidden;
+}
+.hero-bg-circle { position: absolute; border-radius: 50%; background: rgba(201,168,76,0.07); pointer-events: none; }
+.hero-bg-circle.c1 { width: 600px; height: 600px; top: -200px; right: -200px; }
+.hero-bg-circle.c2 { width: 300px; height: 300px; bottom: -100px; left: -100px; }
+.hero-inner {
+  display: grid; grid-template-columns: 1fr 400px; gap: 60px;
+  align-items: center; position: relative; z-index: 1;
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3);
+  color: var(--gold); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 20px; margin-bottom: 24px;
+}
+.hero-tag::before { content: '●'; font-size: 7px; }
+.hero-title { color: white; margin-bottom: 20px; }
+.hero-title em { color: var(--gold); }
+.hero-sub {
+  font-size: 17px; color: rgba(255,255,255,0.6);
+  margin-bottom: 36px; line-height: 1.75; max-width: 500px;
+}
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 36px; }
+.hero-proof {
+  display: flex; align-items: center; gap: 14px;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius); padding: 14px 18px;
+}
+.hero-proof-icon {
+  width: 40px; height: 40px; border-radius: 8px;
+  background: var(--gold-lt); display: flex; align-items: center; justify-content: center;
+  font-size: 20px; flex-shrink: 0;
+}
+.hero-proof-text { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.5; }
+.hero-proof-text strong { display: block; color: white; font-size: 14px; margin-bottom: 3px; }
+.hero-proof-link { color: var(--gold); text-decoration: none; font-size: 12px; }
+.hero-proof-link:hover { text-decoration: underline; }
+.hero-card {
+  background: white; border-radius: 16px; padding: 28px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.hero-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px; font-weight: 600; color: var(--ink);
+  margin-bottom: 20px; padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.hero-card-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 0; border-bottom: 1px solid var(--border);
+}
+.hero-card-row:last-of-type { border: none; margin-bottom: 20px; }
+.hero-card-label { font-size: 13px; color: var(--ink2); }
+.hero-card-val { font-size: 15px; font-weight: 700; color: var(--green); }
+
+/* PROOF STRIP */
+#proof-strip { padding: 36px 0; background: var(--gold); }
+.proof-strip-inner {
+  display: flex; justify-content: center; flex-wrap: wrap;
+}
+.proof-item {
+  flex: 1; min-width: 160px; text-align: center;
+  padding: 10px 20px;
+  border-right: 1px solid rgba(255,255,255,0.3);
+}
+.proof-item:last-child { border: none; }
+.proof-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px; font-weight: 600; color: white; line-height: 1;
+}
+.proof-label { font-size: 12px; color: rgba(255,255,255,0.8); margin-top: 4px; }
+
+/* SECTION HEADERS */
+.section-header { text-align: center; margin-bottom: 52px; }
+.section-tag {
+  display: inline-block;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+}
+.section-title { color: var(--ink); margin-bottom: 14px; }
+.section-sub { font-size: 16px; color: var(--muted); max-width: 540px; margin: 0 auto; }
+
+/* SERVICES */
+#services { background: var(--white); }
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+}
+.service-card {
+  background: var(--cream); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 26px 22px;
+  transition: all 0.25s;
+}
+.service-card:hover {
+  transform: translateY(-4px); box-shadow: var(--shadow-lg);
+  border-color: var(--gold);
+}
+.service-icon { font-size: 30px; margin-bottom: 14px; }
+.service-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 600; color: var(--ink); margin-bottom: 8px;
+}
+.service-desc { font-size: 14px; color: var(--ink2); line-height: 1.65; }
+.service-card.cta-card {
+  border: 2px dashed var(--gold-border); background: var(--gold-lt);
+}
+
+/* WHO I HELP */
+#who-i-help { background: var(--ink); }
+#who-i-help .section-title { color: white; }
+#who-i-help .section-sub { color: rgba(255,255,255,0.45); }
+.segment-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+}
+.segment-card {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius); padding: 20px 14px;
+  text-align: center; transition: all 0.2s;
+}
+.segment-card:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(201,168,76,0.4);
+}
+.segment-icon { font-size: 26px; margin-bottom: 10px; }
+.segment-name { font-size: 13px; font-weight: 600; color: white; margin-bottom: 5px; }
+.segment-why { font-size: 12px; color: rgba(255,255,255,0.45); line-height: 1.5; }
+.segment-card.highlight { border-color: rgba(201,168,76,0.4); background: rgba(201,168,76,0.06); }
+
+
+/* PRICING */
+#pricing { background: var(--white); }
+.pricing-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+  margin-bottom: 24px;
+}
+.pkg-card {
+  border: 1.5px solid var(--border); border-radius: 16px;
+  overflow: hidden; transition: all 0.2s;
+}
+.pkg-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+.pkg-card.featured { border-color: var(--gold); border-width: 2px; }
+.pkg-hdr { padding: 22px 20px 18px; }
+.pkg-hdr.light { background: var(--cream); }
+.pkg-hdr.gold-bg { background: var(--gold); }
+.pkg-hdr.dark { background: var(--ink); }
+.pkg-badge {
+  display: inline-block; background: var(--ink); color: var(--gold);
+  font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 3px 10px; border-radius: 4px;
+  margin-bottom: 8px;
+}
+.pkg-name {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; margin-bottom: 8px; color: var(--muted);
+}
+.pkg-name.w { color: rgba(255,255,255,0.75); }
+.pkg-name.g { color: var(--gold); }
+.pkg-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px; font-weight: 600; line-height: 1;
+}
+.pkg-price.lt { color: white; }
+.pkg-note { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.pkg-note.lt { color: rgba(255,255,255,0.6); }
+.pkg-tagline { font-size: 13px; color: var(--ink2); margin-top: 8px; }
+.pkg-tagline.lt { color: rgba(255,255,255,0.75); }
+.pkg-items { padding: 18px 20px; background: var(--white); }
+.pkg-item {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 7px 0; border-bottom: 1px solid var(--border);
+  font-size: 13px; color: var(--ink2);
+}
+.pkg-item:last-child { border: none; }
+.pkg-check { color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.pkg-recurring {
+  padding: 11px 20px; background: var(--green-lt);
+  font-size: 13px; color: var(--green); font-weight: 600;
+  border-top: 1px solid #c8e8d8;
+}
+.pkg-footer { padding: 14px 20px; background: var(--cream); border-top: 1px solid var(--border); }
+.pkg-footer .btn { width: 100%; justify-content: center; }
+.addons-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+  margin-top: 18px;
+}
+.addon-card {
+  background: var(--cream); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 22px;
+}
+.addon-tag {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 6px;
+}
+.addon-name {
+  font-family: 'Cormorant Garamond', serif; font-size: 20px;
+  font-weight: 600; margin-bottom: 8px;
+}
+.addon-desc { font-size: 13px; color: var(--ink2); margin-bottom: 14px; }
+.addon-price { font-size: 17px; font-weight: 700; color: var(--ink); }
+.addon-price span { font-size: 13px; font-weight: 400; color: var(--muted); }
+.pricing-note {
+  margin-top: 28px; text-align: center;
+  background: var(--gold-lt); border: 1px solid var(--gold-border);
+  border-radius: var(--radius); padding: 20px 28px;
+  font-size: 14px; color: #7d5a10; line-height: 1.7;
+}
+.pricing-note strong { font-size: 15px; color: var(--ink); display: block; margin-bottom: 6px; }
+
+/* WORK */
+.work-card {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 56px;
+  align-items: center; margin-top: 48px;
+}
+.work-preview {
+  border-radius: 14px; overflow: hidden;
+  box-shadow: var(--shadow-lg); border: 1px solid var(--border);
+}
+.work-browser-bar {
+  background: #f0ece4; padding: 10px 16px;
+  display: flex; align-items: center; gap: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.browser-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--border); display: inline-block;
+}
+.browser-dot:nth-child(1) { background: #ff6057; }
+.browser-dot:nth-child(2) { background: #ffbd2e; }
+.browser-dot:nth-child(3) { background: #27c93f; }
+.browser-url {
+  margin-left: 10px; font-size: 12px; color: var(--muted);
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 4px; padding: 3px 10px; flex: 1; text-align: center;
+}
+.work-browser-body {
+  background: #0d0d1a;
+  padding: 40px 28px 48px;
+  min-height: 260px; display: flex; align-items: center;
+}
+.work-site-hero { text-align: center; width: 100%; }
+.work-site-eyebrow {
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: #c9a84c; margin-bottom: 14px;
+}
+.work-site-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(22px, 4vw, 32px); font-weight: 600;
+  color: white; line-height: 1.2; margin-bottom: 22px;
+}
+.work-site-title em { font-style: italic; color: #c9a84c; }
+.work-site-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.work-site-btn-fill {
+  background: #c9a84c; color: #0d0d1a;
+  padding: 8px 18px; border-radius: 6px; font-size: 11px;
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.work-site-btn-outline {
+  border: 1.5px solid rgba(255,255,255,0.5); color: white;
+  padding: 8px 18px; border-radius: 6px; font-size: 11px;
+  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.work-client-tag {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
+}
+.work-client-name {
+  font-size: clamp(26px, 3.5vw, 36px); margin-bottom: 16px;
+}
+.work-client-desc {
+  font-size: 15px; color: var(--ink2); line-height: 1.7; margin-bottom: 22px;
+}
+.work-tags {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px;
+}
+.work-tags span {
+  font-size: 12px; font-weight: 500; color: var(--ink2);
+  background: var(--cream); border: 1px solid var(--border);
+  border-radius: 20px; padding: 4px 12px;
+}
+.work-cta-note {
+  text-align: center; margin-top: 48px;
+  font-size: 15px; color: var(--muted);
+}
+.work-cta-note a { color: var(--gold); font-weight: 600; text-decoration: none; }
+.work-cta-note a:hover { text-decoration: underline; }
+@media (max-width: 768px) {
+  .work-card { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* ABOUT */
+#about { background: var(--cream); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-label {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+}
+.about-body { font-size: 15px; color: var(--ink2); line-height: 1.8; margin-bottom: 20px; }
+.trust-list { display: flex; flex-direction: column; gap: 14px; }
+.trust-item { display: flex; gap: 12px; align-items: flex-start; }
+.trust-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+.trust-text { font-size: 14px; color: var(--ink2); }
+.trust-text strong { color: var(--ink); }
+.about-card {
+  background: var(--ink); border-radius: 16px; padding: 30px;
+}
+.about-card-tag {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+}
+.about-card h3 { color: white; font-size: 22px; margin-bottom: 6px; }
+.about-card .sub { font-size: 13px; color: rgba(255,255,255,0.45); margin-bottom: 22px; }
+.contact-item {
+  display: flex; gap: 12px; align-items: center;
+  padding: 12px 14px; background: rgba(255,255,255,0.06);
+  border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 10px;
+}
+.contact-item-icon { font-size: 15px; }
+.contact-item-text { font-size: 13px; color: rgba(255,255,255,0.75); }
+.contact-item-text strong { display: block; color: white; font-size: 13px; margin-bottom: 1px; }
+
+/* FAQ */
+#faq { background: var(--white); }
+.faq-wrap { max-width: 760px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-q {
+  width: 100%; text-align: left; background: none; border: none;
+  padding: 20px 0; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  font-family: 'Outfit', sans-serif; font-size: 15.5px; font-weight: 600;
+  color: var(--ink); line-height: 1.4;
+}
+.faq-q:hover { color: var(--ink2); }
+.faq-icon { font-size: 20px; flex-shrink: 0; color: var(--muted); transition: transform 0.2s; }
+.faq-item.open .faq-icon { transform: rotate(45deg); color: var(--gold); }
+.faq-a {
+  display: none; padding: 0 0 20px;
+  font-size: 15px; color: var(--ink2); line-height: 1.75;
+}
+.faq-item.open .faq-a { display: block; }
+.faq-a a { color: var(--gold); }
+
+/* CONTACT */
+#contact { background: var(--ink); }
+#contact .section-title { color: white; }
+#contact .section-sub { color: rgba(255,255,255,0.45); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+.contact-form-wrap {
+  background: white; border-radius: 16px; padding: 30px;
+}
+.form-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 22px;
+}
+.form-group { margin-bottom: 14px; }
+.form-group label {
+  display: block; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 5px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%; padding: 11px 13px;
+  border: 1.5px solid var(--border); border-radius: 8px;
+  font-family: 'Outfit', sans-serif; font-size: 14px; color: var(--ink);
+  background: var(--cream); transition: border-color 0.2s; outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--gold); }
+.form-group textarea { height: 90px; resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-submit .btn { width: 100%; justify-content: center; margin-top: 4px; }
+.wa-card {
+  background: var(--wa); border-radius: 14px; padding: 26px;
+  margin-bottom: 22px;
+}
+.wa-card h3 { color: white; font-size: 20px; margin-bottom: 8px; }
+.wa-card p { font-size: 14px; color: rgba(255,255,255,0.85); margin-bottom: 18px; }
+.wa-card .btn { background: var(--ink); color: white; width: 100%; justify-content: center; }
+.wa-card .btn:hover { background: #2d2d4a; }
+.contact-details { list-style: none; }
+.contact-details li {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 14px; color: rgba(255,255,255,0.6);
+}
+.contact-details li:last-child { border: none; }
+.contact-details li strong { color: white; display: block; font-size: 13px; margin-bottom: 2px; }
+.contact-details li span { flex-shrink: 0; }
+
+/* FOOTER */
+footer {
+  background: var(--ink); border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 28px 0; font-size: 13px;
+  color: rgba(255,255,255,0.4);
+}
+.footer-inner {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px;
+}
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif; font-size: 18px;
+  font-weight: 600; color: white; text-decoration: none;
+}
+.footer-logo em { color: var(--gold); }
+.footer-links { display: flex; gap: 20px; list-style: none; }
+.footer-links a { color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: white; }
+.footer-social { display: flex; gap: 14px; align-items: center; }
+.footer-social a { color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; display: flex; }
+.footer-social a:hover { color: white; }
+.footer-social svg { width: 18px; height: 18px; }
+
+/* FLOATING WHATSAPP */
+.wa-float {
+  position: fixed; bottom: 24px; right: 24px; z-index: 900;
+  background: var(--wa); color: white;
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  text-decoration: none; transition: all 0.25s;
+}
+.wa-float:hover { background: #20b857; transform: scale(1.1); }
+
+/* RESPONSIVE */
+@media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-card { display: none; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .segment-grid { grid-template-columns: 1fr 1fr; }
+.about-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+  .addons-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  section { padding: 56px 0; }
+  .services-grid { grid-template-columns: 1fr; }
+  .segment-grid { grid-template-columns: 1fr 1fr; }
+  .nav-links {
+    display: none; flex-direction: column; position: absolute;
+    top: 64px; left: 0; right: 0; background: var(--cream);
+    padding: 16px 24px; border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: flex; }
+  .hero-actions { flex-direction: column; }
+  .form-row { grid-template-columns: 1fr; }
+  .proof-strip-inner { flex-direction: column; }
+  .proof-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
+  .proof-item:last-child { border: none; }
+  .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+}
+</style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5EVHDCR7DH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5EVHDCR7DH');
+</script>
+<body>
+
+<!-- Floating WhatsApp — replace XXXXXXXXXX with your number -->
+<a href="https://wa.me/918850281560?text=Hi!%20I%20saw%20your%20website%20and%20want%20to%20know%20more%20about%20getting%20my%20business%20online."
+   class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="logo.svg" alt="HB Digital" height="40" style="display:block;">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta">💬 WhatsApp Me</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-circle c1"></div>
+  <div class="hero-bg-circle c2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-tag">Digital Services for Small Businesses</div>
+        <h1 class="hero-title">
+          Your business<br>deserves to be<br><em>found online.</em>
+        </h1>
+        <p class="hero-sub">
+          I build professional websites, custom business email, and Google Business profiles for small businesses — so new customers find you every single day.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/918850281560?text=Hi!%20I%20want%20to%20get%20my%20business%20online.%20Can%20we%20talk%3F"
+             class="btn btn-wa" target="_blank" rel="noopener">
+            💬 WhatsApp Me Now
+          </a>
+          <a href="#pricing" class="btn btn-outline-white">
+            See Pricing ↓
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-title">What You Get — At a Glance</div>
+        <div class="hero-card-row">
+          <span class="hero-card-label">Professional Website</span>
+          <span class="hero-card-val">✓ Included</span>
+        </div>
+        <div class="hero-card-row">
+          <span class="hero-card-label">Custom Business Email</span>
+          <span class="hero-card-val">✓ Included</span>
+        </div>
+        <div class="hero-card-row">
+          <span class="hero-card-label">Google Business Setup</span>
+          <span class="hero-card-val">✓ Included</span>
+        </div>
+        <div class="hero-card-row">
+          <span class="hero-card-label">WhatsApp Button</span>
+          <span class="hero-card-val">✓ Included</span>
+        </div>
+        <div class="hero-card-row">
+          <span class="hero-card-label">Mobile Friendly & Fast</span>
+          <span class="hero-card-val">✓ Included</span>
+        </div>
+        <a href="#pricing" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:4px;">
+          See Pricing →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF STRIP -->
+<div id="proof-strip">
+  <div class="container">
+    <div class="proof-strip-inner">
+      <div class="proof-item">
+        <div class="proof-num">5–10</div>
+        <div class="proof-label">Days to Go Live</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num">100%</div>
+        <div class="proof-label">Done For You</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num">1-on-1</div>
+        <div class="proof-label">Personal Service</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num">₹5,999</div>
+        <div class="proof-label">Starting Price</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num">Zero</div>
+        <div class="proof-label">Tech Knowledge Needed</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">What I Do</div>
+      <h2 class="section-title">Everything your business needs<br><em>to look professional online</em></h2>
+      <p class="section-sub">Send me photos and details on WhatsApp. I handle the rest — no tech jargon, no back-and-forth emails.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <div class="service-name">Professional Website</div>
+        <p class="service-desc">A clean, fast, mobile-friendly site that shows your work, lists your services, and captures new customer leads — even while you sleep.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📧</div>
+        <div class="service-name">Custom Business Email</div>
+        <p class="service-desc">Replace your Gmail with <strong>info@yourbusiness.com</strong>. Instantly looks more professional to customers, suppliers, and vendors. 2–10 accounts included.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📍</div>
+        <div class="service-name">Google Business Profile</div>
+        <p class="service-desc">When people search "photographer near me" or "cake shop in [your area]" — I make sure your business appears. Setup, photos, category optimisation, and first review included.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💬</div>
+        <div class="service-name">WhatsApp Integration</div>
+        <p class="service-desc">A one-tap WhatsApp button on your website so customers can inquire or order instantly. No form to fill, no app to download — just a tap and a conversation.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <div class="service-name">Ongoing Maintenance</div>
+        <p class="service-desc">New photos, price updates, seasonal text — WhatsApp me the change, I'll update it. Hosting renewals and uptime monitoring included. No tech headaches for you.</p>
+      </div>
+      <div class="service-card cta-card">
+        <div class="service-icon">📦</div>
+        <div class="service-name" style="color: #7d5a10;">Everything Together</div>
+        <p class="service-desc" style="color: #7d5a10;">All of the above, bundled in one package. One setup fee, one monthly number, one person to WhatsApp. Simple.</p>
+        <a href="#pricing" class="btn btn-gold" style="margin-top: 20px; font-size: 14px; padding: 10px 20px;">See Packages →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO I HELP -->
+<section id="who-i-help">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" style="color: rgba(201,168,76,0.9);">Who I Work With</div>
+      <h2 class="section-title" style="color:white;">Built for your kind of<br><em>small business</em></h2>
+      <p class="section-sub">If your customers Google you before calling — or should — you need this.</p>
+    </div>
+    <div class="segment-grid">
+      <div class="segment-card">
+        <div class="segment-icon">📸</div>
+        <div class="segment-name">Photographers & Studios</div>
+        <div class="segment-why">Portfolio + booking form = more shoots, fewer missed leads</div>
+      </div>
+      <div class="segment-card">
+        <div class="segment-icon">🎂</div>
+        <div class="segment-name">Home Bakers & Cake Studios</div>
+        <div class="segment-why">Gallery + order form beyond Instagram followers</div>
+      </div>
+      <div class="segment-card">
+        <div class="segment-icon">🎓</div>
+        <div class="segment-name">Coaching & Tutors</div>
+        <div class="segment-why">Get found when parents Google in admission season</div>
+      </div>
+      <div class="segment-card">
+        <div class="segment-icon">🍱</div>
+        <div class="segment-name">Tiffin & Cloud Kitchens</div>
+        <div class="segment-why">Menu, pricing + WhatsApp order button in one place</div>
+      </div>
+      <div class="segment-card">
+        <div class="segment-icon">💆</div>
+        <div class="segment-name">Salons & Beauty Studios</div>
+        <div class="segment-why">Services menu + booking link adds real credibility</div>
+      </div>
+      <div class="segment-card">
+        <div class="segment-icon">🎭</div>
+        <div class="segment-name">Dance, Music & Art Classes</div>
+        <div class="segment-why">Fees, timings, batches — parents find you before calling</div>
+      </div>
+      <div class="segment-card">
+        <div class="segment-icon">🏥</div>
+        <div class="segment-name">Clinics & Physiotherapists</div>
+        <div class="segment-why">Credentials + appointments build trust before the visit</div>
+      </div>
+      <div class="segment-card highlight">
+        <div class="segment-icon">🏪</div>
+        <div class="segment-name" style="color: var(--gold);">Any Local Business</div>
+        <div class="segment-why" style="color: rgba(201,168,76,0.7);">If people search for what you do, you need to be there</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Transparent Pricing</div>
+      <h2 class="section-title">No hidden charges.<br><em>No surprises.</em></h2>
+      <p class="section-sub">One-time setup fee + a small monthly amount to keep everything running. That's it.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <!-- Starter -->
+      <div class="pkg-card">
+        <div class="pkg-hdr light">
+          <div class="pkg-name">Starter</div>
+          <div class="pkg-price">₹5,999</div>
+          <div class="pkg-note">one-time setup</div>
+          <div class="pkg-tagline">Get online fast — all the essentials.</div>
+        </div>
+        <div class="pkg-items">
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>1-page professional website</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Mobile-responsive design</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>2 custom email accounts</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Domain registration (1 year)</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Hosting setup</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Google Business profile</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>WhatsApp click-to-chat button</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Ready in 5–7 days</span></div>
+        </div>
+        <div class="pkg-recurring">+ ₹599/month maintenance</div>
+        <div class="pkg-footer">
+          <a href="https://wa.me/918850281560?text=Hi!%20I%27m%20interested%20in%20the%20Starter%20package%20(₹5%2C999).%20Can%20we%20talk%3F"
+             class="btn btn-outline" target="_blank" rel="noopener">💬 Get Started</a>
+        </div>
+      </div>
+
+      <!-- Growth (Featured) -->
+      <div class="pkg-card featured">
+        <div class="pkg-hdr gold-bg">
+          <div class="pkg-badge">Most Popular</div>
+          <div class="pkg-name w">Growth</div>
+          <div class="pkg-price lt">₹12,999</div>
+          <div class="pkg-note lt">one-time setup</div>
+          <div class="pkg-tagline lt">The complete picture — for serious businesses.</div>
+        </div>
+        <div class="pkg-items">
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Multi-page website (up to 5 pages)</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Photo gallery / portfolio section</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Inquiry / booking form with email alerts</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>5 custom email accounts</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Google Business + basic SEO setup</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>WhatsApp order / inquiry button</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>3 months free minor updates</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Ready in 7 days</span></div>
+        </div>
+        <div class="pkg-recurring">+ ₹999/month maintenance retainer</div>
+        <div class="pkg-footer">
+          <a href="https://wa.me/918850281560?text=Hi!%20I%27m%20interested%20in%20the%20Growth%20package%20(₹12%2C999).%20Can%20we%20talk%3F"
+             class="btn btn-primary" target="_blank" rel="noopener">💬 Get This Package</a>
+        </div>
+      </div>
+
+      <!-- Premium -->
+      <div class="pkg-card">
+        <div class="pkg-hdr dark">
+          <div class="pkg-name g">Premium</div>
+          <div class="pkg-price lt">₹24,999</div>
+          <div class="pkg-note" style="color:rgba(255,255,255,0.5)">one-time setup</div>
+          <div class="pkg-tagline" style="color:rgba(255,255,255,0.65)">Full digital presence, fully managed.</div>
+        </div>
+        <div class="pkg-items">
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Up to 10 custom pages</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Online menu / services catalog with photos</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>10 custom email accounts</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Google Analytics + monthly traffic report</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Priority support — 24 hr response</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>2 seasonal content refreshes per year</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>WhatsApp automation link setup</span></div>
+          <div class="pkg-item"><span class="pkg-check">✓</span><span>Ready in 10 days</span></div>
+        </div>
+        <div class="pkg-recurring">+ ₹1,999/month full management</div>
+        <div class="pkg-footer">
+          <a href="https://wa.me/918850281560?text=Hi!%20I%27m%20interested%20in%20the%20Premium%20package%20(₹24%2C999).%20Can%20we%20talk%3F"
+             class="btn btn-outline" target="_blank" rel="noopener">💬 Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add-ons -->
+    <div class="addons-grid">
+      <div class="addon-card">
+        <div class="addon-tag">Add-On</div>
+        <div class="addon-name">Business Email Only</div>
+        <p class="addon-desc">Already have a website? Just want a professional email to start? Great entry point — most clients end up getting a full site within 6 months.</p>
+        <div class="addon-price">₹1,999 setup <span>+ ₹299/month — up to 3 email accounts</span></div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-tag">Add-On</div>
+        <div class="addon-name">Google Business Only</div>
+        <p class="addon-desc">For snack counters, restaurants, and walk-in shops. Get on Google Maps, start showing in local searches. Entry point — see the traffic, then talk website.</p>
+        <div class="addon-price">₹1,499 one-time <span>— profile setup + optimisation + first review</span></div>
+      </div>
+    </div>
+
+    <div class="pricing-note">
+      <strong>What does monthly maintenance include?</strong>
+      Price changes, new photos, seasonal text updates — WhatsApp me, I'll do it. Hosting renewals, uptime monitoring, and basic security are covered too. Less than a cup of coffee a day — your entire online presence, looked after.
+    </div>
+  </div>
+</section>
+
+<!-- WORK / TESTIMONIALS -->
+<section id="work" style="background: var(--white);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Our Work</div>
+      <h2 class="section-title">Real websites.<br><em>Real businesses.</em></h2>
+      <p class="section-sub">A look at what we've built for clients — clean, professional, and ready to convert.</p>
+    </div>
+    <div class="work-card">
+      <div class="work-preview">
+        <div class="work-browser-bar">
+          <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+          <span class="browser-url">raajstudio.com</span>
+        </div>
+        <div class="work-browser-body">
+          <div class="work-site-hero">
+            <p class="work-site-eyebrow">Est. 1960 &mdash; Mulund, Mumbai</p>
+            <p class="work-site-title">Every Frame<br><em>Tells a Story</em></p>
+            <div class="work-site-btns">
+              <span class="work-site-btn-fill">View Gallery</span>
+              <span class="work-site-btn-outline">Book a Shoot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-details">
+        <div class="work-client-tag">Photography Studio · Mumbai</div>
+        <h3 class="work-client-name">Raaj Studio</h3>
+        <p class="work-client-desc">A complete website redesign for one of Mumbai's oldest photography studios — est. 1960. Cinematic hero slider, filterable photo gallery, services showcase, enquiry form, and WhatsApp integration built in.</p>
+        <div class="work-tags">
+          <span>Website Redesign</span>
+          <span>Photo Gallery</span>
+          <span>WhatsApp Button</span>
+          <span>Contact Form</span>
+          <span>Mobile-First</span>
+        </div>
+        <a href="https://www.raajstudio.com" class="btn btn-outline" target="_blank" rel="noopener">View Live Site &rarr;</a>
+      </div>
+    </div>
+    <p class="work-cta-note">Want to see a free mockup for your own business? <a href="https://wa.me/918850281560?text=Hi!%20I%27d%20like%20to%20see%20a%20free%20mockup%20for%20my%20business." target="_blank" rel="noopener">WhatsApp me</a> — I'll build one.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="about-label">About</div>
+        <h2 class="section-title" style="text-align:left; margin-bottom:20px;">
+          One person, not an agency.<br><em>Personal service all the way.</em>
+        </h2>
+        <p class="about-body">
+          I run HB Digital — working with small businesses to build their digital presence from scratch. No big agency, no sales team, no complicated contracts. Just clean professional work, everything on WhatsApp, and you can meet me in person before you decide anything.
+        </p>
+        <p class="about-body">
+          No tech jargon, no pressure, no surprises. You run your business — I handle the website.
+        </p>
+        <div class="trust-list">
+          <div class="trust-item">
+            <div class="trust-icon">📍</div>
+            <div class="trust-text"><strong>Available in person.</strong> I can meet you at your shop or a nearby café — whatever works for you.</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">🤝</div>
+            <div class="trust-text"><strong>No commitment to start.</strong> Have a conversation, see a free demo, decide when you're ready.</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">💬</div>
+            <div class="trust-text"><strong>WhatsApp-first.</strong> Everything on WhatsApp — updates, questions, changes. No portals or email chains.</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">✅</div>
+            <div class="trust-text"><strong>Proven work.</strong> I'll share examples on WhatsApp — or build you a free mockup so you can see the quality before deciding.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <div class="about-card-tag">Let's Talk</div>
+        <h3>Ready to get started?</h3>
+        <p class="sub">WhatsApp, call, or let's meet in person. No pressure — just a conversation.</p>
+        <a href="https://wa.me/918850281560?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20getting%20my%20business%20online."
+           class="btn btn-wa" target="_blank" rel="noopener" style="width:100%; justify-content:center; margin-bottom:14px;">
+          💬 WhatsApp Me Now
+        </a>
+        <div class="contact-item">
+          <span class="contact-item-icon">📞</span>
+          <div class="contact-item-text">
+            <strong>Phone / WhatsApp</strong>
+            +91 +91 88502 81560
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-icon">📧</span>
+          <div class="contact-item-text">
+            <strong>Email</strong>
+            hello@hbdigital.in
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-icon">📍</span>
+          <div class="contact-item-text">
+            <strong>Availability</strong>
+            Available for in-person meetings — WhatsApp to arrange
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Common Questions</div>
+      <h2 class="section-title">Things people usually<br><em>ask me first</em></h2>
+    </div>
+    <div class="faq-wrap">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          My business runs on WhatsApp and Instagram. Isn't that enough?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          WhatsApp and Instagram are great for people who already know you. But they don't help new customers find you. When someone searches "cake shop near me" or "photographer in [your area]" on Google — only businesses with websites and Google profiles appear. A website works for you 24 hours a day, even when you're sleeping.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          ₹5,999 feels expensive. Is it really worth it?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Think about what you already spend: a flex board or sign outside your shop costs ₹2,000–₹5,000 and is seen only by people who pass by once. A website is found by everyone who searches on Google — every day, for years. If it brings you even 2–3 new customers a year, it has already paid for itself many times over.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          I know nothing about technology. Will I be able to manage this?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          You don't manage anything — that's the whole point. When you need to update prices, add a photo, or change text, you WhatsApp me and I'll do it. The monthly maintenance fee covers exactly this. You run your business; I handle the website.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How does the process work? What do I need to give you?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          We start with a quick chat — WhatsApp or in person. You send me photos of your work, a list of your services and prices, and your contact details — all on WhatsApp. I build the site, show you a preview, make any changes you want, and then go live. Start to finish: 5–10 days.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What happens if I stop paying the monthly fee?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          The website and domain are yours — they stay live as long as hosting is paid (I'll always remind you before renewals). You just won't have my support for updates. Most clients find the monthly fee very worth it because they send me changes regularly.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can I see examples of your work before deciding?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Yes — WhatsApp me and I'll share examples of previous work directly. I'm also happy to build a quick free mockup for your business so you can see exactly what it would look like before committing to anything.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do I need to be in a specific area to work with you?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Not at all. Everything is done over WhatsApp — you send photos, text, and details; I handle the build. I can also meet in person when helpful. If you're comfortable on WhatsApp, location doesn't matter at all.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What if I'm not happy with what you build?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          I show you the site for approval before it goes live. If anything needs changing, I'll change it — revisions are included until you're satisfied. I run a referral-based business, which means my reputation matters more to me than a quick sale. Your satisfaction is non-negotiable.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Ready to get your<br><em>business online?</em></h2>
+      <p class="section-sub">Fill the form or just WhatsApp me directly. No commitment, no pressure — just a conversation.</p>
+    </div>
+    <div class="contact-grid">
+
+      <!-- Form -->
+      <!-- Sign up at formspree.io (free), create a form, replace YOUR_FORM_ID below -->
+      <div class="contact-form-wrap">
+        <div class="form-title">Send me a message</div>
+        <form action="https://formspree.io/f/mdawrpob" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Priya Mehta" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">WhatsApp Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98XXX XXXXX" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="business">Your Business Name</label>
+            <input type="text" id="business" name="business" placeholder="e.g. Priya's Cakes">
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option value="">Select a package...</option>
+              <option value="starter">Starter — ₹5,999 + ₹599/month</option>
+              <option value="growth">Growth — ₹12,999 + ₹999/month (Most Popular)</option>
+              <option value="premium">Premium — ₹24,999 + ₹1,999/month</option>
+              <option value="email-only">Email Only — ₹1,999 setup</option>
+              <option value="google-business">Google Business Only — ₹1,499</option>
+              <option value="unsure">Not sure yet — just want to talk</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Anything to add? (Optional)</label>
+            <textarea id="message" name="message" placeholder="Tell me about your business, what you need, or just say hi..."></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Send Message →</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <div class="wa-card">
+          <h3>Prefer to WhatsApp directly?</h3>
+          <p>Most people find this easiest. Send me a message right now — I reply within a few hours.</p>
+          <a href="https://wa.me/918850281560?text=Hi!%20I%20want%20to%20get%20my%20business%20online.%20Can%20we%20talk%3F"
+             class="btn" target="_blank" rel="noopener">
+            💬 Open WhatsApp Chat
+          </a>
+        </div>
+        <ul class="contact-details">
+          <li>
+            <span>📞</span>
+            <div><strong>Phone / WhatsApp</strong>+91 +91 88502 81560</div>
+          </li>
+          <li>
+            <span>📧</span>
+            <div><strong>Email</strong>hello@hbdigital.in</div>
+          </li>
+          <li>
+            <span>📍</span>
+            <div><strong>Availability</strong>Available for in-person meetings — WhatsApp to arrange</div>
+          </li>
+          <li>
+            <span>🕐</span>
+            <div><strong>Response Time</strong>Usually within a few hours on WhatsApp</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#hero" class="footer-logo">HB <em>Digital</em></a>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/hbdigital.in/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61576413445853" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+      <div>© 2025 HB Digital</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Navbar shadow on scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// Mobile nav toggle
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// Close mobile nav on link click
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+
+// FAQ accordion
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+</script>
+</body>
+</html>
