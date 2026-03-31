@@ -353,33 +353,8 @@ section { padding: 80px 0; }
   background: var(--white); border: 1px solid var(--border);
   border-radius: 4px; padding: 3px 10px; flex: 1; text-align: center;
 }
-.work-browser-body {
-  background: #0d0d1a;
-  padding: 40px 28px 48px;
-  min-height: 260px; display: flex; align-items: center;
-}
-.work-site-hero { text-align: center; width: 100%; }
-.work-site-eyebrow {
-  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-  color: #c9a84c; margin-bottom: 14px;
-}
-.work-site-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(22px, 4vw, 32px); font-weight: 600;
-  color: white; line-height: 1.2; margin-bottom: 22px;
-}
-.work-site-title em { font-style: italic; color: #c9a84c; }
-.work-site-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-.work-site-btn-fill {
-  background: #c9a84c; color: #0d0d1a;
-  padding: 8px 18px; border-radius: 6px; font-size: 11px;
-  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-}
-.work-site-btn-outline {
-  border: 1.5px solid rgba(255,255,255,0.5); color: white;
-  padding: 8px 18px; border-radius: 6px; font-size: 11px;
-  font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-}
+.work-browser-body { overflow: hidden; line-height: 0; }
+.work-browser-body img { width: 100%; display: block; }
 .work-client-tag {
   font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
@@ -917,14 +892,7 @@ footer {
           <span class="browser-url">raajstudio.com</span>
         </div>
         <div class="work-browser-body">
-          <div class="work-site-hero">
-            <p class="work-site-eyebrow">Est. 1960 &mdash; Mulund, Mumbai</p>
-            <p class="work-site-title">Every Frame<br><em>Tells a Story</em></p>
-            <div class="work-site-btns">
-              <span class="work-site-btn-fill">View Gallery</span>
-              <span class="work-site-btn-outline">Book a Shoot</span>
-            </div>
-          </div>
+          <img src="images/work-raajstudio.jpg" alt="Raaj Studio website screenshot">
         </div>
       </div>
       <div class="work-details">
@@ -941,6 +909,31 @@ footer {
         <a href="https://www.raajstudio.com" class="btn btn-outline" target="_blank" rel="noopener">View Live Site &rarr;</a>
       </div>
     </div>
+    <div class="work-card" style="margin-top:64px;padding-top:64px;border-top:1px solid var(--border);">
+      <div class="work-details">
+        <div class="work-client-tag">Private Wealth Advisory · Mumbai</div>
+        <h3 class="work-client-name">Infinex Wealth</h3>
+        <p class="work-client-desc">A full website build for a SEBI-registered private wealth advisory firm — dark navy and gold design, Cormorant Garamond typography, stats bar, service cards, FAQ accordion, process infographic, and WhatsApp + Formspree contact integration.</p>
+        <div class="work-tags">
+          <span>Website Build</span>
+          <span>Financial Advisory</span>
+          <span>FAQ Accordion</span>
+          <span>WhatsApp CTA</span>
+          <span>Contact Form</span>
+        </div>
+        <a href="https://infinexwealth.com" class="btn btn-outline" target="_blank" rel="noopener">View Live Site &rarr;</a>
+      </div>
+      <div class="work-preview">
+        <div class="work-browser-bar">
+          <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+          <span class="browser-url">infinexwealth.com</span>
+        </div>
+        <div class="work-browser-body">
+          <img src="images/work-infinexwealth.jpg" alt="Infinex Wealth website screenshot">
+        </div>
+      </div>
+    </div>
+
     <p class="work-cta-note">Want to see a free mockup for your own business? <a href="https://wa.me/918850281560?text=Hi!%20I%27d%20like%20to%20see%20a%20free%20mockup%20for%20my%20business." target="_blank" rel="noopener">WhatsApp me</a> — I'll build one.</p>
   </div>
 </section>
