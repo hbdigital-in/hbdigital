@@ -214,8 +214,8 @@ check("AI Visibility add-on standalone card present",
       'ai-addon-card' in html)
 check("AI Visibility in Growth pkg-items",
       'AI Visibility Setup' in html and 'pkg-new-badge' in html)
-check("AI Visibility standalone price ₹4,999",
-      '₹4,999' in html)
+check("AI Visibility standalone price ₹9,999",
+      '₹9,999' in html)
 
 # FAQ AI questions
 ai_faq_count = len(re.findall(r'ChatGPT|Gemini|AI assistant|AI chatbot|AI Visibility',
