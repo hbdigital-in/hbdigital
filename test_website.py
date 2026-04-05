@@ -226,6 +226,12 @@ check("Multiple AI mentions in FAQ section",
 
 check("AI Visibility in contact form dropdown",
       'ai-visibility' in html or 'AI Visibility Setup' in html)
+check("Introductory pricing note present",
+      'introductory' in html_lower,
+      "pricing-intro-note missing")
+check("Strikethrough was-price for Starter present",
+      '9,999' in html,
+      "anchor price missing")
 
 # -----------------------------------------------------------------------------
 # GROUP 6: Phone Number & Contact Consistency

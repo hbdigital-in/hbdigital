@@ -463,8 +463,12 @@ section { padding: 80px 0; }
   font-size: 36px; font-weight: 600; line-height: 1;
 }
 .pkg-price.lt { color: white; }
+.pkg-was { font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+.pkg-was.lt { color: rgba(255,255,255,0.45); }
+.pkg-was s { text-decoration: line-through; }
 .pkg-note { font-size: 12px; color: var(--muted); margin-top: 4px; }
 .pkg-note.lt { color: rgba(255,255,255,0.6); }
+.pricing-intro-note { text-align: center; font-size: 12px; font-style: italic; color: var(--muted); margin-bottom: 24px; }
 .pkg-tagline { font-size: 13px; color: var(--ink2); margin-top: 8px; }
 .pkg-tagline.lt { color: rgba(255,255,255,0.75); }
 .pkg-items { padding: 18px 20px; background: var(--white); }
@@ -725,6 +729,7 @@ footer {
   color: rgba(255,255,255,0.75); font-size: 15px; line-height: 1.75;
 }
 .discovery-bridge strong { color: white; }
+.discovery-who { font-size: 13px; color: rgba(201,168,76,0.8); margin-top: 16px; border-top: 1px solid rgba(201,168,76,0.2); padding-top: 12px; }
 .discovery-bridge .bridge-accent {
   display: block; margin-top: 14px;
   font-size: 14px; font-weight: 600; color: var(--gold);
@@ -986,6 +991,7 @@ footer {
     <div class="discovery-bridge">
       AI assistants like <strong>ChatGPT, Gemini, and Google's AI Overview</strong> are the new Yellow Pages. They pull from your website, your Google reviews, and how consistently your business appears across the internet.
       <span class="bridge-accent">HB Digital builds for both channels — the only local agency that does.</span>
+      <div class="discovery-who"><strong>Who benefits most from AI visibility:</strong> Cafes &amp; restaurants · Fitness studios · Salons &amp; spas · Photographers · Event planners · Boutiques — B2C businesses where customers in their 20s–35s are already using ChatGPT for recommendations.</div>
     </div>
   </div>
 </section>
@@ -1025,7 +1031,7 @@ footer {
         <p class="service-desc">New photos, price updates, seasonal text — WhatsApp me the change, I'll update it. Hosting renewals and uptime monitoring included. No tech headaches for you.</p>
       </div>
       <div class="service-card ai-card">
-        <div class="ai-card-tag">NEW SERVICE</div>
+        <div class="ai-card-tag">Included in Growth + Premium · Best for cafes, salons, fitness, studios</div>
         <div class="service-icon">✨</div>
         <div class="service-name">AI Visibility Setup</div>
         <p class="service-desc">When your customer asks ChatGPT or Gemini "find me a salon in Mulund" — we make sure your business is one of the answers.</p>
@@ -1048,7 +1054,7 @@ footer {
     <div class="section-header">
       <div class="section-tag" style="color: rgba(201,168,76,0.9);">Who I Work With</div>
       <h2 class="section-title" style="color:white;">Built for your kind of<br><em>small business</em></h2>
-      <p class="section-sub">If your customers Google you — or ask an AI — before calling, you need this.</p>
+      <p class="section-sub">If your customers search online before calling or ordering, you need a professional web presence.</p>
     </div>
     <div class="segment-grid">
       <div class="segment-card">
@@ -1104,15 +1110,17 @@ footer {
       <h2 class="section-title">No hidden charges.<br><em>No surprises.</em></h2>
       <p class="section-sub">One-time setup fee + a small monthly amount to keep everything running. That's it.</p>
     </div>
+    <p class="pricing-intro-note">Introductory pricing — launch rates for our first clients. These prices reflect our genuine market value as we build our portfolio.</p>
     <div class="pricing-grid">
 
       <!-- Starter -->
       <div class="pkg-card">
         <div class="pkg-hdr light">
           <div class="pkg-name">Starter</div>
+          <div class="pkg-was">was <s>₹9,999</s></div>
           <div class="pkg-price">₹5,999</div>
-          <div class="pkg-note">one-time setup</div>
-          <div class="pkg-tagline">Get online fast — all the essentials.</div>
+          <div class="pkg-note">one-time setup · introductory price</div>
+          <div class="pkg-tagline">Professional website, Google presence, done.</div>
         </div>
         <div class="pkg-items">
           <div class="pkg-item"><span class="pkg-check">✓</span><span>1-page professional website</span></div>
@@ -1123,7 +1131,6 @@ footer {
           <div class="pkg-item"><span class="pkg-check">✓</span><span>Google Business profile</span></div>
           <div class="pkg-item"><span class="pkg-check">✓</span><span>WhatsApp click-to-chat button</span></div>
           <div class="pkg-item"><span class="pkg-check">✓</span><span>Ready in 5–7 days</span></div>
-          <div class="pkg-item pkg-item-optional"><span style="color:var(--muted);font-weight:700;">○</span><span>AI Visibility Setup — <a href="https://wa.me/918850281560?text=Hi!%20I%27m%20interested%20in%20AI%20Visibility%20Setup%20for%20my%20business." target="_blank" rel="noopener">add ₹2,999</a></span></div>
         </div>
         <div class="pkg-recurring">+ ₹599/month maintenance</div>
         <div class="pkg-footer">
@@ -1137,8 +1144,9 @@ footer {
         <div class="pkg-hdr gold-bg">
           <div class="pkg-badge">Most Popular</div>
           <div class="pkg-name w">Growth</div>
+          <div class="pkg-was lt">was <s>₹21,999</s></div>
           <div class="pkg-price lt">₹12,999</div>
-          <div class="pkg-note lt">one-time setup</div>
+          <div class="pkg-note lt">one-time setup · introductory price</div>
           <div class="pkg-tagline lt">The complete picture — for serious businesses.</div>
         </div>
         <div class="pkg-items">
@@ -1163,8 +1171,9 @@ footer {
       <div class="pkg-card">
         <div class="pkg-hdr dark">
           <div class="pkg-name g">Premium</div>
+          <div class="pkg-was lt">was <s>₹41,999</s></div>
           <div class="pkg-price lt">₹24,999</div>
-          <div class="pkg-note" style="color:rgba(255,255,255,0.5)">one-time setup</div>
+          <div class="pkg-note" style="color:rgba(255,255,255,0.5)">one-time setup · introductory price</div>
           <div class="pkg-tagline" style="color:rgba(255,255,255,0.65)">Full digital presence, fully managed.</div>
         </div>
         <div class="pkg-items">
